@@ -1,0 +1,10 @@
+leave .env.example alone, make new file called .env
+
+
+
+
+
+
+
+when pulling the upstream say >git pull upstream
+add the fixtures in before you run tests

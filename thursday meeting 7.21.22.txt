@@ -1,0 +1,27 @@
+I noticed that we are passing around a secret key in github via .env.example, is 
+this best practices?
+
+'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'
+'a+ah#!5(!&j#bbv065oyfypm#2a3$inb8mh*5n#+pgz0%fz)'\
+
+some underlined issues in api.urls.py
+
+In the video tutorial on django rest frame work, we are interacting with 
+the drf user interface (default page for the api to create a post request.
+Is this how the easter egg is supposed to be interacted with?
+
+implimented permissions, all api's have to be authenticated, give permission as allow any
+every view will have permission classes permission_classes = [IsAuthenticated] use [AllowAny] instead
+or run all the files in fixtures (see readme in repo)
+
+run fixtures run the command 
+docker-compose exec web bash
+./manage.py loaddata api/fixtures/resources_data.json
+./manage.py loaddata api/fixtures/roles_data.json
+./manage.py loaddata api/fixtures/teams_data.json
+./manage.py loaddata api/fixtures/users_data.json
+or can use a docker extension pycharm
+
+good to swager signin as director
+grab access token from swagger sign in
+accessing apis from swagger (user neeeds to be authenticated)

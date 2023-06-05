@@ -1,0 +1,2 @@
+how to write a migration
+Jay made a reference to another migration, look at that.

@@ -1,0 +1,9 @@
+todo:
+
+update code for the first pr issue 591
+
+
+invitee needs email role status resend_invite(link)
+we accidently made email, message, registration_token, accepted (true/false)
+
+

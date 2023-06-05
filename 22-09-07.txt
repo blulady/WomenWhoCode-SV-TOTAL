@@ -1,0 +1,20 @@
+not a regular migration
+I will 
+	-copy data from a particular table to an invitie 
+in the issue
+ she has refrenced a migration
+	-not trying to create a table/model
+	-just trying to add data
+	-when you create/apply this migrations it will create an empty table called teams
+	-when .bulk_create is called it puts all the info into the table
+	-viri's branch = #531 create invite model and migrations
+sprint7Featurependingmemberstoinvitee591Sarah
+
+sendgrid mailgun
+ubunto -post fix psuedo app instal postfix v brew instal
+choclatey
+
+Resume
+-docx 
+-(can't read pdf, italics, headers/footers)
+-don't use multiple columns use a left tab stop instead

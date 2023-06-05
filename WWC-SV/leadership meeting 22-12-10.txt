@@ -1,0 +1,19 @@
+5 active members,
+no new members,
+talk about what we are working on: finding alternatives to heroku
+still trying to keep our services free
+we're
+timeline for this decision - we will take a few weeks in december, we should
+decide by the next meeting or following meeting.
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgresdb_od99',
+        'USER': 'postgresuser',
+        'PASSWORD': 'XhUh1PmLsNc8tr0vPtZuOt9deLzXaXkU',
+        'HOST': 'dpg-ce4m92mn6mpj46gpd98g-a',
+        'PORT': '5432',
+    }
+}
+

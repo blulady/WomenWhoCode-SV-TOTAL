@@ -1,0 +1,11 @@
+you can overwrite a create method with a Post
+look for alternative to heroku
+	Render/Linode
+	free tier
+	supports docker
+	supports postgres
+	SSL
+	support sendgrid or sending emails
+Write down the steps you need to follow
+
+Reach out to AWS/Azure & see if we can get free hosting

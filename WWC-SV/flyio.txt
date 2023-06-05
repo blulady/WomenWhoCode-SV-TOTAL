@@ -1,0 +1,28 @@
+Free Allowances
+Resources included for free on all plans:
+
+Up to 3 shared-cpu-1x 256mb VMs
+3GB persistent volume storage (total)
+160GB outbound data transfer
+
+
+	CPU(s)	RAM	Price
+shared-cpu-1x	1 shared	256MB	$0.0000008/s ($1.94/mo)
+				512MB	$0.0000012/s ($3.19/mo)
+				1GB	$0.0000022/s ($5.70/mo)
+				2GB	$0.0000041/s ($10.70/mo)
+
+
+CONTAINER ID   IMAGE               COMMAND                  CREATED          STATUS          PORTS                    NAMES                 SIZE
+26a26ef05d3d   wwcodesvtools_web   "python manage.py ru…"   21 seconds ago   Up 19 seconds   0.0.0.0:8000->8000/tcp   wwcodesvtools_web_1   617kB (virtual 1.05GB)
+5bd54c2cfa6b   postgres:12         "docker-entrypoint.s…"   4 weeks ago      Up 22 seconds   5432/tcp                 wwcodesvtools_db_1    63B (virtual 373MB)
+
+
+Render
+Starter   $7/month 256 MB Shared(cpu)  1 GB 97 connections
+Standard $20/month   1 GB        1    16 GB 97 connections
+
+put this on the wiki
+
+
+

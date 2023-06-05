@@ -1,0 +1,7 @@
+I submitted the starter issue 99 but the tests failed on CircleCI and I don't have access to see what failed
+
+should be getting a json back
+generic error views
+from settings in the configure file (setting)
+
+ca

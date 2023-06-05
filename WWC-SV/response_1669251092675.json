@@ -1,0 +1,236 @@
+[
+  {
+    "id": 34,
+    "first_name": "FirstNametest",
+    "last_name": "LastNametest",
+    "email": "QHO.QUEENIEHO@GMAIL.COM",
+    "status": "ACTIVE",
+    "highest_role": "VOLUNTEER",
+    "date_joined": "2022-08-31T19:20:01.092012Z",
+    "role_teams": [
+      {
+        "team_id": 6,
+        "team_name": "Tech Event Volunteers",
+        "role_name": "VOLUNTEER"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "first_name": "Heather",
+    "last_name": "Mahan123",
+    "email": "heatheramahan+123@gmail.com",
+    "status": "ACTIVE",
+    "highest_role": "VOLUNTEER",
+    "date_joined": "2022-05-12T18:44:03.692666Z",
+    "role_teams": [
+      {
+        "team_id": 8,
+        "team_name": "Tech Bloggers",
+        "role_name": "VOLUNTEER"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "first_name": "Heather",
+    "last_name": "Mahan",
+    "email": "heatheramahan@gmail.com",
+    "status": "ACTIVE",
+    "highest_role": "LEADER",
+    "date_joined": "2022-02-09T04:24:42.827036Z",
+    "role_teams": [
+      {
+        "team_id": 8,
+        "team_name": "Tech Bloggers",
+        "role_name": "LEADER"
+      },
+      {
+        "role_name": "VOLUNTEER"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "first_name": "Lily",
+    "last_name": "B",
+    "email": "viwwcsv@gmail.com",
+    "status": "ACTIVE",
+    "highest_role": "DIRECTOR",
+    "date_joined": "2021-08-29T15:35:13.561363Z",
+    "role_teams": [
+      {
+        "team_id": 1,
+        "team_name": "Event Volunteers",
+        "role_name": "DIRECTOR"
+      },
+      {
+        "team_id": 3,
+        "team_name": "Host Management",
+        "role_name": "DIRECTOR"
+      },
+      {
+        "team_id": 5,
+        "team_name": "Social Media",
+        "role_name": "DIRECTOR"
+      },
+      {
+        "role_name": "LEADER"
+      },
+      {
+        "team_id": 2,
+        "team_name": "Hackathon Volunteers",
+        "role_name": "VOLUNTEER"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "first_name": "Sophie",
+    "last_name": "Butler",
+    "email": "sophiebutler@example.com",
+    "status": "ACTIVE",
+    "highest_role": "DIRECTOR",
+    "date_joined": "2021-05-27T21:34:01.149000Z",
+    "role_teams": [
+      {
+        "team_id": 4,
+        "team_name": "Partnership Management",
+        "role_name": "DIRECTOR"
+      },
+      {
+        "team_id": 1,
+        "team_name": "Event Volunteers",
+        "role_name": "LEADER"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "first_name": "Alexander",
+    "last_name": "Brown",
+    "email": "alexanderbrown@example.com",
+    "status": "ACTIVE",
+    "highest_role": "LEADER",
+    "date_joined": "2021-05-25T00:00:52.353000Z",
+    "role_teams": [
+      {
+        "role_name": "LEADER"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "first_name": "Sophie",
+    "last_name": "Fisher",
+    "email": "sophiefisher@example.com",
+    "status": "ACTIVE",
+    "highest_role": "LEADER",
+    "date_joined": "2021-05-24T23:55:04.556000Z",
+    "role_teams": [
+      {
+        "team_id": 3,
+        "team_name": "Host Management",
+        "role_name": "LEADER"
+      },
+      {
+        "team_id": 2,
+        "team_name": "Hackathon Volunteers",
+        "role_name": "VOLUNTEER"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "first_name": "Brenda",
+    "last_name": "Jackson",
+    "email": "brendajackson@example.com",
+    "status": "ACTIVE",
+    "highest_role": "DIRECTOR",
+    "date_joined": "2021-05-24T23:50:53.484000Z",
+    "role_teams": [
+      {
+        "team_id": 7,
+        "team_name": "Volunteer Management",
+        "role_name": "DIRECTOR"
+      },
+      {
+        "team_id": 8,
+        "team_name": "Tech Bloggers",
+        "role_name": "DIRECTOR"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "first_name": "Bruno",
+    "last_name": "Clark",
+    "email": "leader@example.com",
+    "status": "INACTIVE",
+    "highest_role": "LEADER",
+    "date_joined": "2021-02-19T01:56:29.756000Z",
+    "role_teams": [
+      {
+        "team_id": 1,
+        "team_name": "Event Volunteers",
+        "role_name": "LEADER"
+      },
+      {
+        "team_id": 7,
+        "team_name": "Volunteer Management",
+        "role_name": "LEADER"
+      },
+      {
+        "role_name": "LEADER"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "first_name": "Alice",
+    "last_name": "Robinson",
+    "email": "volunteer@example.com",
+    "status": "ACTIVE",
+    "highest_role": "VOLUNTEER",
+    "date_joined": "2021-02-19T01:56:06.115000Z",
+    "role_teams": [
+      {
+        "team_id": 4,
+        "team_name": "Partnership Management",
+        "role_name": "VOLUNTEER"
+      },
+      {
+        "team_id": 5,
+        "team_name": "Social Media",
+        "role_name": "VOLUNTEER"
+      },
+      {
+        "team_id": 3,
+        "team_name": "Host Management",
+        "role_name": "VOLUNTEER"
+      },
+      {
+        "role_name": "VOLUNTEER"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "first_name": "John",
+    "last_name": "Smith",
+    "email": "director@example.com",
+    "status": "ACTIVE",
+    "highest_role": "DIRECTOR",
+    "date_joined": "2021-02-19T01:55:01.810000Z",
+    "role_teams": [
+      {
+        "team_id": 5,
+        "team_name": "Social Media",
+        "role_name": "DIRECTOR"
+      },
+      {
+        "role_name": "DIRECTOR"
+      }
+    ]
+  }
+]

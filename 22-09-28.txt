@@ -1,0 +1,67 @@
+dependencies 
+github actions
+	any libraries not currently updated
+package.json has some dependencies
+ruby dependencies/gem 
+
+
+spread out devs
+	100 automations: a whole new team (project managers, ux designers, needs a lead)
+	civic tech
+
+https://github.com/hackforla/engineering/projects/2
+
+priortize what we value as a team
+
+swagger has our users
+3 statuses: active, inactive, pending (hasn't responded to email)
+moving pending members to a new table invitee
+only logged in directors will be able to see pending members
+
+go to shell in the docker contianer
+docker-compose exec web python manage.py shell
+from django.contrib.auth.models import User
+user = User.objects.first()
+users = User.objects.all()
+from api.models import Team
+teams = Team.objects.all()
+teams
+
+attach a shell to the postgress in the docker container
+psql -U postres_dev -d postgres_dev \d
+select * from api_team;
+postgreSQL -Psql commands (tutorial point or geeksforgeeks)
+
+pgadmin -ui tool to connect to your db (can just add it to the docker compose file)
+
+from django.db import migrations
+
+
+def load_invitees(apps, schema_editor):
+    UserInvitee = apps.get_model('api', 'UserProfile')
+    userinvitees = UserInvitee.objects.filter(status='PENDING')
+    invitees = []
+    Invitee = apps.get_model('api', "Invitee")
+    for person in userinvitees:
+        invitee = Invitee(email=person.email)
+        invitees.append(invitee)
+    Invitee.objects.bulk_create(
+        invitees
+    )
+
+
+class Migration(migrations.Migration):
+
+    dependencies = [
+        ('api', '0014_invitee'),
+    ]
+
+    operations = [
+        migrations.RunPython(load_invitees)
+    ]
+
+
+for person in lista:
+...     if person.userprofile.status == "PENDING":
+...             listc.append(person)
+

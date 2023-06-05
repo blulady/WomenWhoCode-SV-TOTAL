@@ -1,0 +1,23 @@
+master is connected to origin (blulady)
+upstream_master is connected to upstream (WWCODE-SV) 
+upstream_master needs to be wiped and recreated
+actually the whole local repo needs to be wiped and redown loaded
+
+class Invitee(models.Model):
+    email = models.EmailField(max_length=254, null=False, blank=False, unique=True)
+    message = models.TextField(null=False, blank=False)
+    registration_token = models.CharField(max_length=150, default='#deftoken#')
+    accepted = models.BooleanField(default=False)
+    created_by = models.ForeignKey(User, on_delete=models.CASCADE)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+email -included with User Model
+message -not on any User model
+registration_token - is this the same as the RegistrationToken model?
+accepted - does this need to be set to anything (it says a boolean, I imagine it would be set to false until they accept the invite?
+created_at -does this need to come from RegestrationToken attribute
+updated_at -   does this need to come from RegestrationToken attribute    
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 description for the strike card: bring it to folks who aren't familiar w/strikes
+blog post                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       

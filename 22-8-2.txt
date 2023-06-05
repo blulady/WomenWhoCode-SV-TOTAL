@@ -1,0 +1,17 @@
+go to swagger http://127.0.0.1:8000/swagger/
+this is where the documentation of all the api's we have
+	login to django login
+		custom token obtain pair
+			get token/api access key
+				then type authorized user
+			user is in readme file
+				load all the fixtures in the api (commands are in readme) will add data to db
+path to fixtures (run all the fixtures)
+ 
+changepasswordview 
+in permissions.py
+have to have authenticate user is a director or superuser
+permission_classes = [isAuthenticated]
+how to assign a permission class
+UserRegistrationView.py
+permission_classes= [AllowAny]

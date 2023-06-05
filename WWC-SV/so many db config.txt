@@ -1,0 +1,27 @@
+postgres://postgresuser:XhUh1PmLsNc8tr0vPtZuOt9deLzXaXkU@dpg-ce4m92mn6mpj46gpd98g-a:5432/postgresdb_od99
+
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": os.getenv("DB_NAME", "db"),
+        "USER": os.getenv("DB_USER", "kenny"),
+        "HOST": os.getenv("DB_HOST", "localhost"),
+        "PASSWORD": os.getenv("DB_PASSWORD", ""),
+        "PORT": os.getenv("DB_PORT", 5432),
+    }
+}
+
+
+SECRET_KEY=django-insecure-&4%8u+xjl+(shxm7xlw9ki+yjk@^cyj9%dx=7yb@yt0t1qg5$@
+ENGINE=django.db.backends.postgresql
+NAME=postgresdb_od99
+USER=postgresuser
+PASSWORD=XhUh1PmLsNc8tr0vPtZuOt9deLzXaXkU
+PORT=5432
+HOST=dpg-ce4m92mn6mpj46gpd98g-a
+PYTHON=3.10.1
+CONN_MAX_AGE=600
+DATABASE_NAME=postgresdb_od99
+DATABASE_PASSWORD=XhUh1PmLsNc8tr0vPtZuOt9deLzXaXkU
+DATABASE_URL=postgres://postgresuser:XhUh1PmLsNc8tr0vPtZuOt9deLzXaXkU@dpg-ce4m92mn6mpj46gpd98g-a/postgresdb_od99
+

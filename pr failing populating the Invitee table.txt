@@ -1,0 +1,11 @@
+one test failing 
+FAIL: test_team_seed_data (api.tests.test_team_model_seed_data.TeamModelSeedDataTestCase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/code/api/tests/test_team_model_seed_data.py", line 10, in test_team_seed_data
+    self.assertEqual(len(teams), 8)
+AssertionError: 7 != 8
+
+write a bash script to load the fixtues for you
+
+shouldn't use fixutres for testing

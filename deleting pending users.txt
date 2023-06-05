@@ -1,0 +1,192 @@
+>>> from api.models import User
+>>> from api.models import UserProfile
+>>> from api.models import User_Team
+>>> ut = User_Team.objects.all()
+>>> up = UserProfile.objects.all()
+>>> u = User.objects.all()
+hasattr(ut[13], "userprofile")
+
+for person in u:
+...     if hasattr(person, "userprofile"):
+...             u_pending.append(person)
+
+for person in ut:
+...     if hasattr(person.user, "userprofile"):
+...             utwup.append(person)
+
+for person in utwup:
+...     print(person.user.userprofile.status)
+
+up_p = UserProfile.objects.filter(status="PENDING")
+up[3].user in up_p
+
+if its a user team member person.user.userprofile.status
+
+step 1.
+	grab all UserProfile.objects that are pending
+	up_p = UserProfile.objects.filter(status="PENDING")
+step 2.
+	grab the users from up_p
+	for person in up_p:
+	     up_pending_users.append(person.user)
+
+step 3.
+	use the users in up_pending_users to grab those users from User_Teams
+	ut_pending = []
+	for person in ut:
+		if person.user in up_pending_users:
+			ut_pending.append(person)
+
+step 4.
+	grab the users in up_pending users to grab the users
+	u_pending = []
+	for person in u:
+		if person in up_pending_users:
+			u_pending.append(person)
+step 5.
+	check ut(User_Team for persons that don't have a profile or a pending one)
+	ut_userprofile = []
+	for person in ut:
+	     	if not hasattr(person.user, "userprofile"):
+        	     	ut_userprofile.append(person)
+     		if hasattr(person.user, "userprofile"):
+             		if person.user.userprofile.status == "PENDING":
+                     		ut_userprofile.append(person)
+
+step 6.
+	check u(users for persons that don't have a profile or a pending one)
+	u_pending2 = []
+	for person in u:
+	     if not hasattr(person, "userprofile"):
+        	     u_pending2.append(person)
+	     if hasattr(person, "userprofile"):
+             	     if person.userprofile.status == "PENDING":
+                	     u_pending2.append(person)
+
+
+
+
+UserProfile.objects.filter(status="PENDING").delete()
+
+next:
+	from api.models import User
+	from api.models import UserProfile
+	from api.models import User_Team
+	u = User.objects.all()
+	up = UserProfile.objects.all()
+	ut = User_Team.objects.all()
+	up_p = UserProfile.objects.filter(status="PENDING")
+	up_pu = []
+	for users in up_p:
+	     up_pu.append(users.user)
+
+	for people in u:
+	     if people in up_pu:
+	             people.delete()
+
+	for people in ut:
+	     if people.user in up_pu:
+	             people.delete()
+
+
+	UserProfile.objects.filter(status="PENDING").delete()
+
+from django.db import migrations
+
+
+def delete_pending_users(apps, schema_editor):
+    User = apps.get_model("api", "User")
+    UserProfile = apps.get_model("api", "UserProfile")
+    User_Team = apps.get_model("api", "User_Team")
+    users = User.objects.all()
+    userteams = User_Team.objects.all()
+
+    userprofile_pending = UserProfile.objects.filter(status="PENDING")
+    userprofile_pending_names = [people.user for people in userprofile_pending]
+    for people in users:
+        if people in userprofile_pending_names:
+            people.delete()  # can this be a list comp?
+
+    for people in userteams:
+        if people.user in userprofile_pending_names:
+            people.delete()  # can this be a list comp?
+
+    UserProfile.objects.filter(status="PENDING").delete()
+
+
+class Migration(migrations.Migration):
+
+    dependencies = [
+        ('api', '0016_auto_20230523_1841'),
+    ]
+
+    operations = [
+        migrations.RunPython(delete_pending_users),
+    ]
+
+from django.db import migrations
+from django.contrib.auth.models import User
+
+def delete_pending_users(apps, schema_editor):
+    User = apps.get_model('api', 'User')
+    UserProfile = apps.get_model("api", "UserProfile")
+    User_Team = apps.get_model("api", "User_Team")
+    users = User.objects.all()
+    userteams = User_Team.objects.all()
+
+    userprofile_pending = UserProfile.objects.filter(status="PENDING")
+    userprofile_pending_names = [people.user for people in userprofile_pending]
+    for people in users:
+        if people in userprofile_pending_names:
+            people.delete()  # can this be a list comp?
+
+    for people in userteams:
+        if people.user in userprofile_pending_names:
+            people.delete()  # can this be a list comp?
+
+    UserProfile.objects.filter(status="PENDING").delete()
+
+
+class Migration(migrations.Migration):
+
+    dependencies = [
+        ('api', '0016_auto_20230523_1841'),
+    ]
+
+    operations = [
+        migrations.RunPython(delete_pending_users),
+    ]
+
+from django.db import migrations
+from django.contrib.auth.models import User
+
+
+def delete_pending_users(apps, schema_editor):
+    User = apps.get_model('auth', 'User')
+    UserProfile = apps.get_model("api", "UserProfile")
+    User_Team = apps.get_model("api", "User_Team")
+    users = User.objects.all()
+    userteams = User_Team.objects.all()
+
+    userprofile_pending = UserProfile.objects.filter(status="PENDING")
+    userprofile_pending_names = [people.user for people in userprofile_pending]
+    for people in users:
+        if people in userprofile_pending_names:
+            people.delete()  # can this be a list comp?
+
+    for people in userteams:
+        if people.user in userprofile_pending_names:
+            people.delete()  # can this be a list comp?
+
+    UserProfile.objects.filter(status="PENDING").delete()
+
+
+class Migration(migrations.Migration):
+
+    dependencies = [
+        ('api', '0016_auto_20230523_1841'),
+    ]
+
+    operations = [
+        migrations.RunPython(delete_pending_users),
+    ]

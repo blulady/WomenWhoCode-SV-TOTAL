@@ -1,0 +1,16 @@
+-review each other's prs
+fixing the coors issue
+local
+
+
+BTW 
+This is the command I ran for restoring the DB:
+pg_restore -U postgres -h containers-us-west-114.railway.app -p 6584 -W -d railway latest.dump
+
+LOCAL_FRONTEND_ALLOWED
+FRONTEND_APP_URL
+
+check to see if I have the variables above for the cors
+ERRORS: ?: (corsheaders.E013) Origin "***" in 
+CORS_ALLOWED_ORIGINS is missing scheme or netloc HINT: 
+Add a scheme (e.g. https://) or netloc (e.g. example.com).

@@ -1,0 +1,16 @@
+https://docs.google.com/document/d/1nasDCQ7BLPNlwvmKBn4OyOnLeiRRvgOubho-H66rAxs/edit#heading=h.vg9kkbecvod8
+
+currently 
+building the member's section
+
+future
+pull in from api of the meetups and have the events on our sites
+
+issue99#ssanger
+
+create my own heroku account & create my own name for my app & push it 
+to my own heroku 
+
+wiki/deployment details
+https://github.com/WomenWhoCode/WWCode-SV/wiki/BackEnd-Deployment-Details
+

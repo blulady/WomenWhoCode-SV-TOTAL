@@ -1,0 +1,23 @@
+Docker-compose.yml
+	use the Dockerfile.dev
+
+in the dockerfile
+	she commented out some code
+	and added a command to add the fixture for development environment
+
+For deployment:
+	in the development environment
+
+go to railway dashboard
+	you can see our stage dev & development and production
+
+we go to the development environment
+	
+railway login in the cli
+	got to path with the code in it
+	go to where the dockerfile is (api/wwcodesvtools)
+	railway link
+		select a project, select an environment
+		railway up
+
+can grab invitee tokens from the invitee database in railway

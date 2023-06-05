@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/WWC-SV/WWCode-SV" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/WWWCode-SV" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/codecov/codecov-demo2/codecov-demo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/codecov/codecov-demo3/codecov-demo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/codecov/codecov-demo4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/coverage/WWCode-SV" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test &amp; push/WWCode-SV" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/testCoverage/WWCode-SV" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tutorial/WWCode-SV" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tutorial/dockerized-django-demo" vcs="Git" />
+  </component>
+</project>

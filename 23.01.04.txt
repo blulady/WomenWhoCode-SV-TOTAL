@@ -1,0 +1,5 @@
+1. create a demo for how to deploy to railway
+2. add code coverage to circleCI
+(unit tests should tests all path in the code)
+look up how to integrate coverage.py to circleCI
+https://coverage.readthedocs.io/en/7.0.2/

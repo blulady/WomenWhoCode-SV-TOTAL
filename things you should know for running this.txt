@@ -1,0 +1,16 @@
+*to get docker compose up you have to go to the folder 
+Documents\WWWCode-SV\api\wwcodesvtools>
+
+*when you throw it up in the browser use address
+http://127.0.0.1:8000/admin/login/?next=/admin/
+
+*if you want to update the upstream_master branch
+>git pull https://github.com/WomenWhoCode/WWCode-SV master
+
+*if you want to push up a pull request to https://github.com/WomenWhoCode/WWCode-SV
+>git push --set-upstream upstream name_of_branch
+
+*to load the user data break the command in the wwcodesvtools wiki up into two statements
+docker-compose exec web bash
+python manage.py loaddata api/fixtures/users_data.json
+
